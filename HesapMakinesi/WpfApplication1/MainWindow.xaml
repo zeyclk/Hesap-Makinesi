@@ -1,0 +1,64 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Hesap Makinesi" Height="475.373" Width="398.209">
+    <Grid Background="Bisque">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="0">
+            <TextBox Name="tb" FontSize="36" Margin="9,9,9,9"/>
+        </Grid>
+        
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Button Content="MC" Grid.Row="0" Grid.Column="0" Margin="5,5,5,5"/>
+            <Button Content="MR" Grid.Row="0" Grid.Column="1" Margin="5,5,5,5"/>
+            <Button Content="MS" Grid.Row="0" Grid.Column="2" Margin="5,5,5,5"/>
+            <Button Content="M+" Grid.Row="0" Grid.Column="3" Margin="5,5,5,5"/>
+            <Button Content="M-" Grid.Row="0" Grid.Column="4" Margin="5,5,5,5"/>
+            <Button x:Name="teksil"  Content="←" FontSize="20" FontStyle="Normal" Grid.Row="1" Grid.Column="0" Margin="5,5,5,5" Click="teksil_Click"/>
+            <Button Name="sil" Content="CE" Grid.Row="1" Grid.Column="1" Margin="5,5,5,5" Click="sil_Click_1"/>
+            <Button Content="C"  Grid.Row="1" Grid.Column="2" Margin="5,5,5,5"/>
+            <Button Name="fonksiyon" Content="±" FontSize="20" Grid.Row="1" Grid.Column="3" Margin="5,5,5,5" Click="fonksiyon_Click"/>
+            <Button Name="karakok" Content="√"  FontSize="20" Grid.Row="1" Grid.Column="4" Margin="5,5,5,5" Click="karakok_Click"/>
+            <Button Name="yedi" Content="7" FontSize="20" Grid.Row="2" Grid.Column="0" Margin="5,5,5,5" Click="yedi_Click"/>
+            <Button Name="sekiz" Content="8" FontSize="20" Grid.Row="2" Grid.Column="1" Margin="5,5,5,5" Click="sekiz_Click"/>
+            <Button Name="dokuz" Content="9" FontSize="20" Grid.Row="2" Grid.Column="2" Margin="5,5,5,5" Click="dokuz_Click"/>
+            <Button Name="bolme" Content="/" FontSize="15" Grid.Row="2" Grid.Column="3" Margin="5,5,5,5" Click="bolme_Click"/>
+            <Button Name="yuzde" Content="%" FontSize="15" Grid.Row="2" Grid.Column="4" Margin="5,5,5,5" Click="yuzde_Click"/>
+            <Button Name="dort" Content="4" FontSize="20" Grid.Row="3" Grid.Column="0" Margin="5,5,5,5" Click="dort_Click"/>
+            <Button Name="bes" Content="5" FontSize="20" Grid.Row="3" Grid.Column="1" Margin="5,5,5,5" Click="bes_Click"/>
+            <Button Name="alti" Content="6" FontSize="20" Grid.Row="3" Grid.Column="2" Margin="5,5,5,5" Click="alti_Click"/>
+            <Button Name="carpma" Content="*" FontSize="20" Grid.Row="3" Grid.Column="3" Margin="5,5,5,5" Click="carpma_Click"/>
+            <Button Name="ondalik" Content="⅟ x" FontSize="15" Grid.Row="3" Grid.Column="4" Margin="5,5,5,5" Click="ondalik_Click"/>
+            <Button Name="bir" Content="1" FontSize="20" Grid.Row="4" Grid.Column="0" Margin="5,5,5,5" Click="bir_Click"/>
+            <Button Name="iki" Content="2" FontSize="20" Grid.Row="4" Grid.Column="1" Margin="5,5,5,5" Click="iki_Click"/>
+            <Button Name="uc" Content="3" FontSize="20" Grid.Row="4" Grid.Column="2" Margin="5,5,5,5" Click="uc_Click"/>
+            <Button Name="cikarma" Content="-" FontSize="20" Grid.Row="4" Grid.Column="3" Margin="5,5,5,5" Click="cikarma_Click"/>
+            <Button Name="sifir" Content="0" FontSize="20" Grid.Row="5" Grid.ColumnSpan="2" Margin="5,5,5,5" Click="sifir_Click"/>
+            <Button Name="virgul" Content="," FontSize="15" Grid.Row="5" Grid.Column="2" Margin="5,5,5,5" Click="virgul_Click"/>
+            <Button Name="toplama" Content="+" FontSize="15" Grid.Row="5" Grid.Column="3" Margin="5,5,5,5" Click="toplama_Click"/>
+            <Button Name="esittir" Content="=" FontSize="25" Grid.Column="4" Grid.Row="4" Grid.RowSpan="2" Margin="5,5,5,5" Click="esittir_Click"/>
+        </Grid>
+          
+    </Grid>
+</Window>
